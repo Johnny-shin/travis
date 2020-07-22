@@ -1,0 +1,19 @@
+language: node_js
+node_js:
+  - 12.16.1
+cache: yarn
+
+install:
+  - yarn install # euqalvalent with npm install, automatically install
+
+script: #automatically install npm test command
+  - yarn test
+  - yarn run build
+
+deploy:
+  provider: pages #internally travis knows working with github
+  skip-cleanup: true #because build file is on github
+  github-token: $GITHUB_TOKEN #to prevent exposure of token
+  local_dir: build
+  on:
+    branch: gh-pages
