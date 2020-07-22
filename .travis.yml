@@ -10,6 +10,9 @@ script: #automatically install npm test command
   - yarn test
   - yarn run build
 
+after_success:
+  - fast_finish: true
+
 deploy:
   provider: pages #internally travis knows working with github
   skip-cleanup: true #because build file is on github
