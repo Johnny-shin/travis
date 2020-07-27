@@ -20,7 +20,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p className="myGreet">{greet()}, COMP311</p>
+        <p className="myGreet">{greet()}, COMP311 failed test</p>
         <p>
           <code>src/App.js</code> and save to reload.
         </p>
