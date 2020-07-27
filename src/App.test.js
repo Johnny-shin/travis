@@ -16,7 +16,7 @@ test("proper greeting sentence", () => {
   // expect(getByText(greeting).textContent).toBe(greeting);
 
   const para = container.getElementsByClassName("myGreet")[0];
-  expect(para.innerHTML.includes(greeting)).toBe(false);
+  expect(para.innerHTML.includes(greeting)).toBe(true);
   // expect(paragraps[0])
   // expect(container.find("myGreet").text().to.equal(greeting));
   // target = container.getByText(greeting);
