@@ -21,7 +21,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p className="myGreet">
-          {greet()}, Hello COMP311, This is Sucess test case
+          {greet()}, Hello COMP311, This is failed test case
         </p>
         <p>
           <code>src/App.js</code> and save to reload.
