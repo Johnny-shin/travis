@@ -1,5 +1,5 @@
+import { render } from "@testing-library/react";
 import React from "react";
-import { render, getByAltText, getByText } from "@testing-library/react";
 import App from "./App";
 
 //Test case 1
