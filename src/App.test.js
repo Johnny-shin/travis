@@ -15,7 +15,7 @@ test("proper greeting sentence", () => {
   const greeting = TDD_greet();
 
   const para = container.getElementsByClassName("myGreet")[0];
-  expect(para.innerHTML.includes(greeting)).toBe(false); //This line compare text in page with return result from TDD_greet()
+  expect(para.innerHTML.includes(greeting)).toBeTruthy(); //This line compare text in page with return result from TDD_greet()
 });
 const TDD_greet = () => {
   let today = new Date();
